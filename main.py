@@ -4,8 +4,7 @@ import sys
 import os
 import requests
 from dotenv import load_dotenv
-from PyQt5.QtWidgets import (QApplication, QWidget, QLabel,
-                                                       QLineEdit, QPushButton, QVBoxLayout)
+from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout)
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QIcon
 
@@ -141,8 +140,8 @@ class WeatherApp(QWidget):
         self.temperature_label.setText(message)
         self.emoji_label.clear()
         self.description_label.clear()
-        #self.humidity_label.clear()
-        #self.wind_label.clear()
+        self.humidity_label.clear()
+        self.wind_label.clear()
 
     def display_weather(self, data):
         self.temperature_label.setStyleSheet("font-size: 75px;")
